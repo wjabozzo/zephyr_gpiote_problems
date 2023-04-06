@@ -21,7 +21,7 @@ $ grep __device_dts build/zephyr/zephyr_pre0.map
 Setup
 ---
 
-This project was created using visual studio code nfr connect "Create a new application" option with nfr 2.3.0 SDK and based on the 'hello_world' example. The board folder was generated using the "Create a new board" option for the nfr52840 chip.
+This project was created using visual studio code nfr connect "Create a new application" option with nfr `2.3.0 SDK` and based on the `'hello_world'` example. The board folder was generated using the "Create a new board" option for the `nfr52840 chip`.
 
 The devicetree was modified to use gpiote:
 
@@ -51,7 +51,7 @@ The devicetree was modified to use gpiote:
 ...
 ```
 
-The following Kconfig variables were set in proj.conf to activate gpiote:
+The following Kconfig variables were set in `proj.conf` to activate gpiote:
 
 ```Kconfig
 CONFIG_GPIO=y
@@ -59,7 +59,7 @@ CONFIG_GPIO_NRFX=y
 CONFIG_NRFX_GPIOTE=y
 ```
 
-And main.c the gpiote device is fetched and used once:
+And `main.c` the gpiote device is fetched and used once:
 
 ```c
 #include <zephyr/kernel.h>
